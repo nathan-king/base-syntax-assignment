@@ -4,13 +4,23 @@ import UserInput from './UserInput/UserInput';
 import UserOutput from './UserOutput/UserOutput';
 
 class App extends Component {
+  state = {
+    username: 'Nathan'
+  }
+
+  usernameChangeHandler = (event) => {
+    this.setState( {
+      username: event.target.value
+    });
+  }
+
   render() {
     return (
       <div className="App">
-        <UserInput />
-        <UserOutput />
-        <UserOutput />
-        <UserOutput />
+        <UserInput changed={this.usernameChangeHandler} username={this.state.username}/>
+        <UserOutput username={this.state.username}/>
+        <UserOutput username="Sean"/>
+        <UserOutput username="Keean"/>
         <ol>
           <li>Create TWO new components: UserInput and UserOutput</li>
           <li>UserInput should hold an input element, UserOutput two paragraphs</li>
