@@ -1,3 +1,13 @@
 .username {
     font-weight: bold;
+    text-align: center;
+}
+
+.div {
+    margin: 20px 100px;
+    text-align: center;
+    border: 2px solid black;
+    padding: 5px;
+    background-color: #ccc;
+    border-radius: 5px;
 }

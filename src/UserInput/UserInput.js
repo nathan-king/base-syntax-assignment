@@ -6,7 +6,7 @@ const divStyle = {
 
 const inputStyle = {
     textAlign: 'center',
-    border: '2px solid black'
+    border: '2px solid red'
 }
 
 const userInput = (props) => {
